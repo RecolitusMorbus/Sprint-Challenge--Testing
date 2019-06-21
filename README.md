@@ -29,7 +29,14 @@ Demonstrate your understanding of this week's concepts by answering the followin
   `describe()`creates a block that groups together several related tests while `it()` actually runs the test. Good ways to use both is to group related tests by nesting several `describe()` methods within one dedicated to the file you're testing, using the `it()` method to conduct tests within those specific `describe()` methods
 
 2. What is the point of `Test Driven Development`? What do you think about this approach?
+
+  `Test Driven Development` is used to write tests that ensure your code behaves the way it should before you even start writing the code. I think it sounds valuable.
+
 3. Mention three types of automated tests.
+
+  a) End to End
+  b) Integration
+  c) Unit
 
 ## Project Set Up
 
