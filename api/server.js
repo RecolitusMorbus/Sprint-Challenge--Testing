@@ -6,10 +6,10 @@ const gamesRouter = require('../data/routes/game-routes.js');
 const server = express();
 
 server.use(express.json());
-server.use('/games', gamesRouter);
+server.use('/api', gamesRouter);
 
 server.get('/', (req, res) => {
-  res.get(`Server's live, bub.`);
+  res.send(`Server's live, bub.`);
 });
 
 module.exports = server;

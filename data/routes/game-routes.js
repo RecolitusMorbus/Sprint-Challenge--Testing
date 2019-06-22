@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Games = require('../models/game-models.js');
 
-router.get('/', async (req, res) => {
+router.get('/games/', async (req, res) => {
   Games
     .find()
     .then(newGames => {
@@ -12,12 +12,12 @@ router.get('/', async (req, res) => {
     });
 });
 
-router.get('/', async (req, res) => {
+router.get('/games/', async (req, res) => {
   const rows = await games.find();
   res.status(200).json(rows);
 });
 
-router.post('/', (req, res) => {
+router.post('/games/', (req, res) => {
   const game = req.body;
   const { title, genre } = game;
 
